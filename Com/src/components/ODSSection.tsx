@@ -2,8 +2,16 @@ import React from "react";
 import Carousel from "react-elastic-carousel";
 import Cards from "../data/Cards";
 import { useRef } from "react";
+import ODS1 from "../data/img/ODS1.jpg";
+import ODS4 from "../data/img/ODS4.jpg";
+import ODS5 from "../data/img/ODS5.jpg";
+import ODS10 from "../data/img/ODS10.jpg";
 
 function ODSSection() {
+  const o1 = <img src={ODS1} width="500" alt="logo" />;
+  const o4 = <img src={ODS4} width="500" alt="logo" />;
+  const o5 = <img src={ODS5} width="500" alt="logo" />;
+  const o10 = <img src={ODS10} width="500" alt="logo" />;
   const carouselRef = React.useRef(null);
   let resetTimeout;
   const breakPoints = [
@@ -14,6 +22,9 @@ function ODSSection() {
   ];
   return (
     <div className="ODSContainer">
+      <h1 class="place-self-center  font-sans font-bold text-6xl">
+        Ajudamos empresas a atingir suas metas da ODS da ONU
+      </h1>
       <Carousel
         breakPoints={breakPoints}
         ref={carouselRef}
@@ -42,10 +53,10 @@ function ODSSection() {
           }
         }}
       >
-        <Cards number="1" />
-        <Cards number="2" />
-        <Cards number="3" />
-        <Cards number="4" />
+        <img src={ODS1} width="500" alt="logo" />
+        <img src={ODS4} width="500" alt="logo" />
+        <img src={ODS5} width="500" alt="logo" />
+        <img src={ODS10} width="500" alt="logo" />
       </Carousel>
     </div>
   );

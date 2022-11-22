@@ -1,7 +1,6 @@
 import React from "react";
 import "../Global.css";
-
-const number = String;
+import logo from "../data/img/img.jpg";
 
 const Cards = ({ number }) => (
   <div className="card">

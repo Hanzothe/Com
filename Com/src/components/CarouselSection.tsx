@@ -2,8 +2,17 @@ import React from "react";
 import Carousel from "react-elastic-carousel";
 import Cards from "../data/Cards";
 import { useRef } from "react";
+import Action1 from "../data/img/Action1.jpg";
+import Action2 from "../data/img/Action2.jpg";
+import Action3 from "../data/img/Action3.jpg";
+import Action4 from "../data/img/Action4.jpg";
 
 function CarouselSection() {
+  const action1 = <img src={Action1} height="350px" width="450px" alt="logo" />;
+  const action2 = <img src={Action2} height="350px" width="420px" alt="logo" />;
+  const action3 = <img src={Action3} height="350px" width="420px" alt="logo" />;
+  const action4 = <img src={Action4} height="300px" width="465px" alt="logo" />;
+
   const carouselRef = React.useRef(null);
   let resetTimeout;
 
@@ -44,10 +53,10 @@ function CarouselSection() {
           }
         }}
       >
-        <Cards number="1" />
-        <Cards number="2" />
-        <Cards number="3" />
-        <Cards number="4" />
+        <Cards number={action1} />
+        <Cards number={action2} />
+        <Cards number={action3} />
+        <Cards number={action4} />
       </Carousel>
     </div>
   );
