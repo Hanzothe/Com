@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Open Sans";
+}
+
+#header {
+  padding: 1% 5%;
+  display: grid;
+  place-items: center;
+  height: 10vh;
+}
+
+.IndexForm {
+  height: 80vh;
+  width: 100%;
+}
+
+.actions {
+  height: 50vh;
+  width: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.AboutContainer {
+  height: 80vh;
+  width: 100%;
+  background: #ab1cdd;
+}
+
+.BusinessContainer {
+  height: 60vh;
+  width: 100%;
+  background: #e7b4b4;
+}
+
+.ODSContainer {
+  height: 80vh;
+  width: 100%;
+  background: #251e3e;
+}
+
+.card {
+  width: 100%;
+  height: 40vh;
+  background: #333;
+  color: #fff;
+  font-size: 30px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CarouselContainer {
+}
+
+@media (max-width: 1291px) {
+  .card {
+    background: rgb(158, 6, 6);
+    width: 100%;
+    height: 32vh;
+  }
+  .actions {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 1057px) {
+  .card {
+    background: rgb(18, 59, 194);
+    width: 100%;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 869px) {
+  .card {
+    background: rgb(100, 107, 133);
+    width: 500px;
+    height: 150px;
+  }
+}
+
+.IndexForm {
+  display: grid;
+  grid-template-columns: 68% 32%;
+}
+
+#indexgrid {
+  background-color: #e7b4b4;
+}
+#formgrid {
+  background-color: #935a5a;
+}
+
+.AboutContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#candida {
+  background-color: #ab1cdd;
+}
+#cris {
+  background-color: #5418df;
+}
+
+button.rec-dot {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0);
+}
+
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus {
+  box-shadow: 0 0 1px 3px rgba(235, 16, 16, 0.5);
+}
