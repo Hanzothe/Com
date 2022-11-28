@@ -12,5 +12,5 @@ const DataSchema = new mongoose.Schema(
   }
 );
 
-const users = mongoose.model("Usuarios", DataSchema);
-module.exports = users;
+const usuarios = mongoose.model("Usuarios", DataSchema);
+module.exports = usuarios;
