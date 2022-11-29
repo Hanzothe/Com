@@ -7,7 +7,7 @@ function BusinessSection() {
         Crie Comsciência na sua empresa!
       </h1>
       <div class="mt-8 max-height-2 sm:mx-auto sm:w-full sm:max-w-md col-start-1 col-span-2 pb-10 pl-12">
-        <div class="bg-cinza py-8 px-6 shadow rounded-lg sm:px-10">
+        <div class="bg-cinza 		 py-8  px-6 shadow rounded-lg sm:px-10">
           <form class="mb-0 space-y-6" action="#" method="POST">
             <label
               for="email"
@@ -62,7 +62,7 @@ function BusinessSection() {
             <div>
               <button
                 type="submit"
-                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-extrabold text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                class="w-full bg-cta flex justify-center py-2 px-4  border-transparent rounded-md shadow-sm text-sm font-extrabold text-white hover:bg-ctah focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Quero saber mais!
               </button>

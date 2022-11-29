@@ -6,6 +6,7 @@ import CarouselSection from "./components/CarouselSection";
 import Header from "./components/Header";
 import IndexForm from "./components/IndexForm";
 import ODSSection from "./components/ODSSection";
+import Parters from "./components/Parters";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <IndexForm />
       <Actions />
       <AboutSection />
+      <Parters />
       <BusinessSection />
       <ODSSection />
     </div>

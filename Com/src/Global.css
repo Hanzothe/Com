@@ -41,7 +41,7 @@ body {
 }
 
 #img-logo {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -65,9 +65,25 @@ body {
 }
 
 .BusinessContainer {
-  height: 90vh;
+  height: 44rem;
   width: 100%;
-  background: #7ed956;
+  background: rgb(193, 200, 228);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(193, 200, 228, 1) 0%,
+    rgba(238, 210, 229, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(193, 200, 228, 1) 0%,
+    rgba(238, 210, 229, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(193, 200, 228, 1) 0%,
+    rgba(238, 210, 229, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c1c8e4",endColorstr="#eed2e5",GradientType=1);
   display: grid;
   place-items: center;
   grid-template-rows: 25% 75%;
@@ -129,6 +145,14 @@ body {
   height: 30rem;
 }
 
+.parterssection {
+  height: 12rem;
+  width: 100%;
+  background-color: #adadad;
+  display: grid;
+  place-items: center;
+}
+
 button.rec-dot {
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0);
@@ -153,6 +177,8 @@ img {
   width: 95%;
   padding: 20px 40px 40px;
   box-shadow: 12px 11px 11px 0px rgb(0 0 0 / 75%);
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 .container__image {
   height: 18rem;
@@ -164,14 +190,7 @@ img {
 
 .container__text {
   display: inline;
-}
-
-.container__image2 {
-  height: 18rem;
-  width: 18rem;
-  border-radius: 50%;
-  margin: 30px 30px 30px 0;
-  float: right;
+  align-self: center;
 }
 
 #eco {

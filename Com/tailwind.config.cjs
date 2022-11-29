@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     colors: {
       marrom: "#935A5A",
-      cinza: "#D9D9D9",
+      cinza: "rgba(255, 255, 255, 0.3)",
       cta: "#D79B00",
       ctah: "#c99617",
       cor1: "#445827 ",
