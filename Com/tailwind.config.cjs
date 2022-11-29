@@ -14,7 +14,7 @@ module.exports = {
       cor5: "#856d41",
       cor6: "#774936",
       cor7: "#E0C66E",
-      cor8: "#6cac34",
+      cor8: "#d9b558",
       cor9: "#b46b48",
     },
     extend: {},

@@ -91,10 +91,11 @@ body {
 }
 
 .ODSContainer {
-  height: 80vh;
+  height: 35rem;
   width: 100%;
   display: grid;
   align-items: center;
+  background-color: rgba(239, 186, 48, 75%);
 }
 
 .card {
