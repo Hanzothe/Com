@@ -6,7 +6,7 @@ function Actions() {
     <div className="actions">
       <div id="ActionCarouselContainer">
         <h4 class="place-self-center font-bold font-sans text-7xl">
-          Conheça algumas das nossas ações.
+          Conheça algumas das nossas ações!
         </h4>
         <CarouselSection />
       </div>

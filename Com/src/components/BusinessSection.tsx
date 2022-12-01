@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import api from "../../services/api";
 
 function BusinessSection() {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefone, setTelefone] = useState("");
+  const [tipo, setTipo] = useState("2");
+
+  function handleSubmit() {
+    const data = {
+      nome_usuario: nome,
+      email_usuario: email,
+      telefone_usuario: telefone,
+      tipo_usuario: tipo,
+    };
+    const response = api.post("/api/usuarios", data);
+  }
+
   return (
     <div className="BusinessContainer">
       <h1 class="font-sans font-bold text-5xl pt-10 grid col-start-2 col-span-2">
@@ -8,7 +24,7 @@ function BusinessSection() {
       </h1>
       <div class="mt-8 max-height-2 sm:mx-auto sm:w-full sm:max-w-md col-start-1 col-span-2 pb-10 pl-12">
         <div class="bg-cinza 		 py-8  px-6 shadow rounded-lg sm:px-10">
-          <form class="mb-0 space-y-6" action="#" method="POST">
+          <form class="mb-0 space-y-6">
             <label
               for="email"
               class="block text-xl font-medium text-gray-700 font-sans "
@@ -17,12 +33,14 @@ function BusinessSection() {
             </label>
             <div class="mt-1">
               <input
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
                 required
                 class="w-full border-gray-300 border-0 rounded-lg shadow-lg"
+                value={nome}
+                onChange={(e) => setNome(e.target.value)}
               />
             </div>
             <label
@@ -39,6 +57,8 @@ function BusinessSection() {
                 autocomplete="email"
                 required
                 class="w-full border-gray-300 rounded-lg border-0 shadow-lg"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
 
@@ -50,18 +70,19 @@ function BusinessSection() {
             </label>
             <div class="mt-1">
               <input
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
+                id="telefone"
+                name="telefone"
+                type="number"
                 required
                 class="w-full border-gray-300 rounded-lg shadow-lg border-0"
+                value={telefone}
+                onChange={(e) => setTelefone(e.target.value)}
               />
             </div>
 
             <div>
               <button
-                type="submit"
+                onClick={handleSubmit}
                 class="w-full bg-cta flex justify-center py-2 px-4  border-transparent rounded-md shadow-sm text-sm font-extrabold text-white hover:bg-ctah focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Quero saber mais!

@@ -5,21 +5,16 @@ function IndexForm() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
-  // const [tipo, setTipo] = useState("");
+  const [tipo, setTipo] = useState("1");
 
   async function handleSubmit() {
     const data = {
       nome_usuario: nome,
       email_usuario: email,
       telefone_usuario: telefone,
+      tipo_usuario: tipo,
     };
     const response = await api.post("/api/usuarios", data);
-
-    // if (response.status === 200) {
-    //   window.location.href = "./usuarios";
-    // } else {
-    //   alert("Erro ao cadastrar usuario");
-    // }
   }
 
   return (
@@ -95,7 +90,7 @@ function IndexForm() {
 
               <div>
                 <button
-                  type="button"
+                  type="submit"
                   class="w-full flex justify-center py-2 px-4 border-transparent rounded-md shadow-sm  font-medium text-white bg-cta hover:bg-ctah focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   onClick={handleSubmit}
                 >
