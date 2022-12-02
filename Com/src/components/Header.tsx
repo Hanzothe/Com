@@ -6,7 +6,7 @@ function Header() {
   return (
     <div id="header">
       <h2 className="header_logo ">
-        <img id="img-logo" src={ComLogo}></img>
+        <img id="img-logo" src={ComLogo} height="95.4px" width="464px"></img>
       </h2>
     </div>
   );
