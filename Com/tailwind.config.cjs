@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     colors: {
       marrom: "#935A5A",
-      cinza: "#E1DCD2",
+      cinza: "rgba(255, 255, 255, 0.3)",
       cta: "#D79B00",
       ctah: "#c99617",
       cor1: "#445827 ",
@@ -16,8 +16,6 @@ module.exports = {
       cor7: "#E0C66E",
       cor8: "#d9b558",
       cor9: "#b46b48",
-      white: "#ffffff",
-      txtbrown: "#4E4637",
     },
     extend: {},
   },
