@@ -1,13 +1,29 @@
 import React from "react";
 import "../Global.css";
-import ComLogo from "../data/img/logo.png";
+import Logo from "../data/img/logos/Logo6.png";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Header() {
   return (
     <div id="header">
-      <h2 className="header_logo ">
-        <img id="img-logo" src={ComLogo} height="95.4px" width="464px"></img>
-      </h2>
+      <img id="img-logo" src={Logo}></img>
+      <div id="social">
+        <a href="url">
+          <InstagramIcon fontSize="large" className="icons" />
+        </a>
+        <a href="url">
+          <WhatsAppIcon fontSize="large" className="icons" />
+        </a>
+        <a href="url">
+          <FacebookIcon fontSize="large" className="icons" />
+        </a>
+        <a href="url">
+          <LinkedInIcon fontSize="large" className="icons" />
+        </a>
+      </div>
     </div>
   );
 }

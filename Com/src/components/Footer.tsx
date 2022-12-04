@@ -3,8 +3,8 @@ import logo from "../data/img/logolight.png";
 
 function Footer() {
   return (
-    <div class="h-28 w-full bg-cor8">
-      <img class="p-5 pl-16" src={logo} />
+    <div class="h-28 Footer">
+      <img class="p-5" src={logo} width="30%" />
     </div>
   );
 }

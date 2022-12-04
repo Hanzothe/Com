@@ -9,7 +9,7 @@ function AboutSection() {
         <div className="container">
           <img className="container__image" src={candida} />
           <div className="container__text">
-            <h2 class=" font-bold">Quem é Dr. Cândida Costa?</h2>
+            <h2 class=" font-bold text-txtbrown">Quem é Dr. Cândida Costa?</h2>
             <br></br>
             <p>
               Uma mulher preta, doutora, cientista, professora na Unicamp,
@@ -22,7 +22,7 @@ function AboutSection() {
         <div className="container">
           <img className="container__image" src={cris} />
           <div className="container__text">
-            <h2 class="font-bold ">Quem é a Cris Mendes?</h2>
+            <h2 class="font-bold text-txtbrown">Quem é a Cris Mendes?</h2>
             <br></br>
             <p>
               Uma mulher parda, analista, secretaria, coordenadora de politicas

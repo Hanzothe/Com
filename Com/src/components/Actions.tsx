@@ -5,7 +5,7 @@ function Actions() {
   return (
     <div className="actions">
       <div id="ActionCarouselContainer">
-        <h4 class="place-self-center font-bold font-sans text-7xl">
+        <h4 class="place-self-center font-bold font-sans text-7xl text-txtbrown">
           Conheça algumas das nossas ações!
         </h4>
         <CarouselSection />

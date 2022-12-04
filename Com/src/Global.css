@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 html {
-  display: grid;
 }
 
 :root {
   --fs-xl: 3rem;
-  --fs-800: 2.25rem;
-  --fs-600: 1.3rem;
+  --fs-800: 2rem;
+  --fs-700: 1.65rem;
+  --fs-600: 1.5rem;
   --fs-500: 1.3rem;
   --fs-400: 1rem;
+}
+
+.App {
+  display: grid;
 }
 
 @media (width <= 1440px) {
@@ -27,28 +31,48 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: var(--fs-600);
-
-  max-width: 1440px;
+  display: grid;
+  grid-template-rows: 21% 40%;
 
   place-self: center;
+
+  background: linear-gradient(
+    180deg,
+    #e46924 0.1%,
+    rgba(246, 189, 21, 0.72) 7.39%,
+    rgba(255, 255, 255, 0) 26.12%,
+    rgba(250, 212, 11, 0.79) 66.18%,
+    rgba(249, 225, 100, 0.79) 98.44%
+  );
 }
 
 #header {
-  display: grid;
-  place-items: center;
+  display: flex;
   height: 7rem;
-}
+  grid-column-start: 2;
+  max-width: 1440px;
 
-.header_logo {
-  width: 80rem;
-
-  display: grid;
-  place-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #img-logo {
-  max-width: 80%;
-  height: auto;
+  height: 4rem;
+}
+
+#social {
+  display: flex;
+  gap: 5%;
+}
+
+.icons {
+  color: black;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.icons:hover {
+  opacity: 0.6;
 }
 
 .actions {
@@ -56,6 +80,8 @@ body {
   width: 100%;
   display: grid;
   place-items: center;
+  grid-column-start: 2;
+  max-width: 1440px;
 }
 
 #ActionCarouselContainer {
@@ -67,7 +93,21 @@ body {
 
 .AboutContainer {
   width: 100%;
-  background: #ab1cdd;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1440px;
+  grid-column-start: 2;
+}
+
+#candida {
+  display: grid;
+  place-items: center;
+  height: 30rem;
+}
+#cris {
+  display: grid;
+  place-items: center;
+  height: 30rem;
 }
 
 .BusinessContainer {
@@ -90,10 +130,42 @@ body {
     rgba(238, 210, 229, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c1c8e4",endColorstr="#eed2e5",GradientType=1);
+  max-width: 1440px;
+  grid-column-start: 2;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  font-size: var(--fs-800);
+  font-weight: 900;
   display: grid;
+  grid-template-rows: 20% 80%;
   place-items: center;
-  grid-template-rows: 25% 75%;
-  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.FormSpan {
+  height: 75%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 80%;
+}
+
+.BusinessForm {
+  background-color: rgba(255, 255, 255, 0.33);
+}
+
+.BusinessSpan {
+  position: relative;
+  bottom: 20%;
+}
+
+.BusinessSpan h1 {
+  font-size: var(--fs-700);
+}
+
+.BusinessSpan li {
+  font-size: var(--fs-600);
+  margin-top: 25px;
 }
 
 .ODSContainer {
@@ -101,7 +173,13 @@ body {
   width: 100%;
   display: grid;
   align-items: center;
-  background-color: rgba(239, 186, 48, 75%);
+  /* background-color: rgba(239, 186, 48, 75%); */
+  max-width: 1440px;
+  grid-column-start: 2;
+}
+
+.ODSContainer img {
+  border-radius: 5px;
 }
 
 .card {
@@ -119,79 +197,50 @@ body {
   display: grid;
   grid-template-columns: 70% 30%;
   height: 35.5rem;
+  max-width: 1440px;
+  max-width: 1440px;
+  grid-column-start: 2;
 }
 
 #indexgrid {
-  background: rgb(239, 186, 48);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(239, 186, 48, 1) 0%,
-    rgba(152, 76, 147, 0.47942927170868344) 70%,
-    rgba(255, 184, 0, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(239, 186, 48, 1) 0%,
-    rgba(152, 76, 147, 0.47942927170868344) 70%,
-    rgba(255, 184, 0, 0) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(239, 186, 48, 1) 0%,
-    rgba(152, 76, 147, 0.47942927170868344) 70%,
-    rgba(255, 184, 0, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efba30",endColorstr="#ffb800",GradientType=1);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efba30",endColorstr="#ffb800",GradientType=1);
   display: grid;
   place-items: center;
 }
 #formgrid {
-  background: rgb(105, 50, 28);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(105, 50, 28, 1) 0%,
-    rgba(152, 76, 147, 1) 70%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(105, 50, 28, 1) 0%,
-    rgba(152, 76, 147, 1) 70%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(105, 50, 28, 1) 0%,
-    rgba(152, 76, 147, 1) 70%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#69321c",endColorstr="#ffffff",GradientType=1);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
-.AboutContainer {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-#candida {
-  background-color: #dfdfdf;
-  display: grid;
-  place-items: center;
-  height: 30rem;
-}
-#cris {
-  background-color: #dfdfdf;
-  display: grid;
-  place-items: center;
-  height: 30rem;
+#IndexLogo {
+  justify-items: center;
+  color: white;
+  width: 80%;
+  filter: drop-shadow(5px 7px 5px rgba(0, 0, 0, 0.5));
+  padding-top: 5%;
+  padding-left: 15%;
 }
 
 .parterssection {
   height: 12rem;
   width: 100%;
-  background-color: #adadad;
+  /* background-color: #adadad; */
   display: grid;
   place-items: center;
+  grid-column-start: 2;
+  max-width: 1440px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.partners {
+  display: flex;
+  gap: 5rem;
+}
+.partners img {
+  border-radius: 5px;
+}
+.Footer {
+  grid-column-start: 2;
+  max-width: 1440px;
+  height: auto;
 }
 
 button.rec-dot {
@@ -205,12 +254,6 @@ button.rec-dot:focus {
   box-shadow: 0 0 1px 3px rgba(235, 16, 16, 0.5);
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 5px;
-}
-
 .container {
   border-radius: 5px;
   background-color: #f0e8e2;
@@ -219,13 +262,15 @@ img {
   padding: 20px 40px 40px;
   box-shadow: 12px 11px 11px 0px rgb(0 0 0 / 25%);
   display: grid;
+  align-items: center;
+  gap: 20px;
   grid-template-columns: 40% 60%;
 }
 .container__image {
-  height: 18rem;
-  width: 18rem;
+  height: 15rem;
+  width: 15rem;
   border-radius: 50%;
-  margin: 30px 30px 30px 0;
+
   float: left;
 }
 
@@ -235,20 +280,6 @@ img {
 }
 
 /* Estilos de Fonte */
-
-#eco {
-  justify-items: center;
-  color: white;
-  font-weight: bolder;
-  letter-spacing: 0.025em;
-  font-size: 5rem;
-}
-
-#com {
-  font-size: 2.25rem;
-  color: #e1dcd2;
-  font-weight: 300;
-}
 
 #receba {
   text-align: center;

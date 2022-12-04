@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import api from "../../services/api";
+import Logo from "../data/img/logos/Logo2.png";
 
 function IndexForm() {
   const [nome, setNome] = useState("");
@@ -21,9 +22,8 @@ function IndexForm() {
     <div className="IndexForm">
       <div id="indexgrid">
         <div class="h-full w-full grid gap text-justify">
-          <h1 class="place-self-center grid" id="eco">
-            ECOSSISTEMA
-            <h1 id="com">ComsCiência Conecta</h1>
+          <h1 id="IndexLogo">
+            <img src={Logo} />
           </h1>
           <div>
             <p class="px-32 font-light text-txtbrown">
@@ -91,7 +91,7 @@ function IndexForm() {
               <div class="grid">
                 <button
                   type="submit"
-                  class="w-60 place-self-center justify-center py-1 px-4 border-transparent rounded-md shadow-sm  font-medium text-white bg-cta hover:bg-ctah focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  class="w-60 place-self-center justify-center py-1 px-4 border-transparent rounded-md shadow-sm  font-medium text-white bg-cta hover:bg-ctah ease-in-out duration-200"
                   onClick={handleSubmit}
                 >
                   Enviar
